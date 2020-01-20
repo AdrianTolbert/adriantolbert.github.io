@@ -88,16 +88,16 @@ border-width: 1px;
 
 
 }
+
 section p {
 margin:10px;
 
 }
+
 footer{
-    display: flex;
     background-color:black;
     color: white;
-    align-items: center;
     height: 50px;
-    
+    text-align:center;
 
 }
