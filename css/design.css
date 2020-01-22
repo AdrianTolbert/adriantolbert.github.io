@@ -28,7 +28,7 @@ margin:0;
 .design-grid{
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:1fr;
     grid-gap: 1em;
     padding:10px;
     
@@ -56,17 +56,16 @@ section{
 }
 
 .repetition{
-    grid-column:  1;
+    grid-column: 
 
 }
 .contrast{
-    grid-column: 2;
+    grid-column: 
     
 }
 
 .white-space{
-    grid-column:3;
-    
+    grid-column:
 }
 
 h2{
@@ -102,3 +101,22 @@ footer{
     text-align:center;
 
 }
+/* medium query */
+ @media screen and (min-width:680px){
+ 
+   .design-grid{
+grid-template-columns: 1fr 1fr ;
+
+
+   }
+    
+ }
+
+ /* large screen */
+
+ @media screen and (min-width:1000px){
+
+    .design-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+ }
