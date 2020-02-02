@@ -8,8 +8,11 @@ header{
 }
 
 header h1{
-    text-align:center;
-    padding-top: 1%;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+     padding-top: 1%;
+    
 }
 header nav ul{
     display: flex;
