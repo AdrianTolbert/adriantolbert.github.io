@@ -33,3 +33,7 @@ document.getElementById("currentdate").textContent = fulldate;
 document.getElementById("lastmodified").textContent = new Date(document.lastModified);
 
 
+// hamburger toggle menu
+function toggleMenu() {
+document.getElementById("primaryNav").classList.toggle("hide");
+}

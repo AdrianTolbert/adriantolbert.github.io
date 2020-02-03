@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="/weather/Css/preston.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <title>PopRock Weather</title>
 </head>
+
 <body>
-    
+    <div id="wrapper">
+        <header>
+            <picture>
+                <img src="/weather/images/WeatherSiteLogo.png" alt="Weather logo">
+            </picture>
+            
+            <section class="headings">
+
+                <h1>PopRock Weather</h1>
+
+                <div class="tagline">The weather is brought to you.</div>
+
+            </section>
+           
+             
+            
+        </header>
+
+        <main>
+
+            <section id=locationName>
+                <h1>Location Name</h1>
+            </section>
+
+            <section id="currentConditions">
+                <h1>Current Conditions</h1>
+            </section>
+            <section id="temps">
+                <h1>Temperatures</h1>
+            </section>
+            <section id="conditions">
+                <h1>Conditions</h1>
+            </section>
+            <section id="precipitation">
+                <h1>Precipitation</h1>
+            </section>
+        </main>
 
 
 
+        <footer>
+            &copy; 2020 | Adrian Tolbert <br>
+            Current date: <span id="currentdate"></span><br>
+            Last updated: <span id="lastmodified"></span>
 
 
+        </footer>
+        <nav>
+            <button onclick="toggleMenu()"> &#9776;</button>
+            <ul id="primaryNav" class="hide">
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                
 
+            </ul>
 
-
-
-
-
-
-    <footer> 
-        &copy; 2020 | Adrian Tolbert | 
-                     Current date: <span id="currentdate"></span><br>
-                     Last updated: <span id="lastmodified"></span>
-
-
-
-
-
-
-
-
-    </footer>
-
-    <script src="/weather/java/preston.js"></script>
+        </nav>
+        <script src="/weather/java/preston.js"></script>
+    </div>
 </body>
+
 </html>

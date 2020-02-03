@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Sigmar+One&display=swap');
+
+/* /* Change box model   */
+html {
+    box-sizing: border-box;
+   }
+   
+   *, *::before, *::after{
+    box-sizing: inherit;
+   }
+   
+    /* General Styles  */
+   body{
+    
+    font-size: 10px; 
+   }
+
+#wrapper{
+    
+}
+/* Mobile First Styles */
+
+
+header{
+    background-color: lightcyan;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 10px;
+
+
+}.headings h1{
+    font-family: 'Sigmar One', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+    margin-left:10px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.headings{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+
+
+}
+
+.tagline{
+    margin-top:5px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 15px;
+}
+
+
+ header img {
+    
+     height: auto;
+     width: 50px;
+ }
+
+
+ nav{
+background-color: lightcyan;
+font-family: Verdana, sans-serif;
+list-style-type: none;
+margin-top:10px;
+position:fixed;
+
+ }
+ nav button{
+     margin:.2rem 2%;
+     background-color: transparent;
+     font-size: 1.6rem;
+     border:none;
+ }
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin:10px;
+}
+
+nav ul li a{
+ display:block;
+ padding: .8rem;
+ text-decoration:none;
+ color:black;
+ border-top: 1px solid;
+ font-size:1rem;
+
+}
+
+nav ul li a:hover {background-color: darkcyan;}
+ 
+nav ul.hide{display:none;}
+
+main{
+    
+
+    font-size:1.2em;
+    line-height: 3em;
+    font-weight: bold;
+   
+ 
+
+}
+#locationName{
+background-color:lightcoral;
+padding:10px;
+text-align:center;
+margin-left:30px;
+margin-right:30px;
+margin-top:10px;
+
+}
+
+#currentConditions, #temps, #conditions, #precipitation {
+background-color: lightgreen;
+margin-left:50px;
+margin-right:50px;
+margin-top: 10px;
+padding:10px;
+text-align:center;
+}
+
+footer{
+    display:block;
+    background-color:lightcoral;
+    padding:5px;
+    text-align:center;
+    margin-top:10px;
+
+
+}
