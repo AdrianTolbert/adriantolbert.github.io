@@ -177,8 +177,8 @@ footer {
 
 @media only screen and (min-width: 760px) {
 
-    header,
-    nav,
+    
+   
     main,
     footer {
         max-width: 760px;
