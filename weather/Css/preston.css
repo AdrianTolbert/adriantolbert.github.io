@@ -29,6 +29,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 10px;
+    font-size: 10px;
 
 
 }
@@ -66,12 +67,13 @@ header img {
 
 nav {
     background-color: lightcyan;
-    
+
     font-family: Verdana, sans-serif;
     list-style-type: none;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
 }
 
 
@@ -89,7 +91,7 @@ nav button {
 nav ul {
     list-style-type: none;
     padding: 0;
-     margin: 0; 
+    margin: 0;
 }
 
 nav ul li a {
@@ -117,49 +119,49 @@ main {
     line-height: 3em;
     font-weight: bold;
     background-color: lightgray
-
-
-
 }
 
 #locationName {
-    background-color: lightcoral;
+    background-color:white;
     font-family: 'Sigmar One', cursive;
-    padding-bottom: 100px;
     text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 0;
     border-radius: 40px;
     border: solid 1px black;
 }
 
-#currentConditions,
+#currentConditions {
+    font-family: 'Sigmar One', cursive;
+    text-align: center;
+    border-radius: 40px;
+    border: solid 1px black;
+}
+
+
 #temps,
 #conditions,
 #precipitation {
+    width: 300px; 
+    height:300px;
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: lightgreen;
     font-family: 'Sigmar One', cursive;
-    width: 350px; 
-     height:350px;
     font-size: 16px;
-     border-radius: 40px;
-     border: 1px solid black;
-    
- }
- 
- h1{
+    border-radius: 40px;
+    border: 1px solid black;
+
+}
+
+/* h1{
    position: absolute;
    top:-20px;
    
- }
- 
- 
+ } */
+
+
 
 footer {
     display: block;
@@ -185,14 +187,10 @@ footer {
 
 @media only screen and (min-width: 760px) {
 
-    
+
+
    
-    main,
-    footer {
-        max-width: 760px;
-        margin: 0 auto;
-        padding: 10px 0;
-       
+
     }
 
     nav button {
@@ -202,58 +200,58 @@ footer {
     nav ul.hide {
         display: flex;
         margin-top: 0;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        justify-content: center;
         justify-content: space-evenly;
-        z-index: 6;
+        border:black;
     }
 
     nav {
         position: static;
-        z-index:6;
+        border:black;
 
     }
+
 
     nav ul li a {
         border: none;
 
     }
-    #locationName {
+
+    #currentConditions {
         background-color: lightcoral;
         font-family: 'Sigmar One', cursive;
         padding-bottom: 100px;
         text-align: center;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-top: 0px;
         border-radius: 40px;
     }
 
-#currentConditions,
-#temps,
-#conditions,
-#precipitation {
-    background-color: lightgreen;
-    font-family: 'Sigmar One', cursive;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 10px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 8px;
-    border-radius: 40px;
-}
+    
+    #temps{
+    justify-self: left;
+        
 
-    footer {
-        margin-top: 0px;
     }
-}
+   
+    #conditions{
+    justify-self: center;
+
+    }
+
+ #precipitation {
+     justify-self: right;
+ }
+ 
+    footer {
+        margin:0;
+    }
 
 
 
 
 
-/* css for componnent */
+
+/* css for componnent
 .outer{
     width: 200px;
     height: 200px;
@@ -265,7 +263,7 @@ footer {
     margin: auto;
   
 }
-/*   The circle itself */
+  The circle itself 
 .inner{
     position:relative;
     width: 150px;
@@ -275,7 +273,7 @@ footer {
     align-self: center;
 }
 
-/*  The clock hours */
+  The clock hours 
 .i1{
   position: absolute;
   left:220px;
@@ -433,4 +431,4 @@ img{
   left: 168px
 }
 
-
+*/

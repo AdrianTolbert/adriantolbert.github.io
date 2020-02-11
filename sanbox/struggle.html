@@ -1,264 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style> #temps{
-        display: flex;
-       flex-direction: column; 
-         justify-content: center; 
-         align-items: center; 
-        position: relative;
-        background-color: lightgreen;
-        font-family: 'Sigmar One', cursive;
-    /*     margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 10px; */
-         width: 350px; 
-      height:350px;
-        text-align: center;
-        font-size: 16px;
-        border-radius: 40px;
-        border: 1px solid black;
-       align-self: center;
-    }
-    
-    h1{
-      position: absolute;
-      top:-20px;
-      
-    }
-    
-    
-    
-    /* Css Section for the Components. */
-    
-    .outer{
-        width: 200px;
-        height: 200px;
-        background-color: darkgray;
-        position: relative;
-    /*     left:180px;
+    <style>
+        #temps {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: lightgreen;
+            font-family: 'Sigmar One', cursive;
+            width: 350px;
+            height: 350px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 40px;
+            border: 1px solid black;
+            align-self: center;
+        }
+
+        h1 {
+            position: absolute;
+            top: -20px;
+
+        }
+
+
+
+        /* Css Section for the Components. */
+
+        .outer {
+            width: 200px;
+            height: 200px;
+            background-color: darkgray;
+            position: relative;
+            /*     left:180px;
          top:50px ; */
-        border-radius: 90%;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-      
-    }
-    /*   The circle itself */
-    .inner{
-        position:relative;
-        width: 150px;
-        height: 150px;
-        background-color: #fff;
-        border-radius: 90%;
-        align-self: center;
-    }
-    
-    /*  The clock hours */
-    .i1{
-      position: absolute;
-      left:220px;
-      top:88px;
-      z-index:4;
-    }
-    .i2{
-      position: absolute;
-      top:120px;
-      right:90px;
-      z-index:4;
-    }
-    .i3{
-      position: absolute;
-      top:162px;
-      right:83px;
-      z-index:4;
-    }
-    .i4{
-      position: absolute;
-      bottom:120px;
-      right:93px;
-      z-index:4;
-    }
-    
-    .i5{
-      position:absolute;
-      bottom:88px;
-      right:120px;
-      z-index:4;
-      
-    }
-    
-    .i6{
-      position:absolute;
-      right:168px;
-      bottom: 75px;
-      z-index:4;
-      
-      
-    }
-      
-    
-    
-    .i7{
-      position:absolute;
-      left: 120px;
-      bottom:90px;
-      z-index:4;
-      }
-    
-    .i8{
-      position:absolute;
-      left:90px;
-      bottom: 120px;
-      z-index:4;
-      }
-    
-    .i9{
-      position:absolute;
-      top:162px;
-      left:82px;
-      z-index:4;
-      }
-    
-    .i10{
-      position:absolute;
-      top:120px;
-      left:87px;
-        z-index:4;
-    }
-    .i12{
-      position:absolute;
-      top:74px;
-      left: 168px
-    }
-    img{
-      width: 35px;
-    }
-    
-    .img1{
-      position: absolute;
-      left:220px;
-      top:88px;
-      z-index:4;
-    }
-    .img2{
-      position: absolute;
-      top:120px;
-      right:90px;
-      z-index:4;
-    }
-    .img3{
-      position: absolute;
-      top:162px;
-      right:83px;
-      z-index:4;
-    }
-    .img4{
-      position: absolute;
-      bottom:120px;
-      right:93px;
-      z-index:4;
-    }
-    
-    .img5{
-      position:absolute;
-      bottom:88px;
-      right:120px;
-      z-index:4;
-      
-    }
-    
-    .img6{
-      position:absolute;
-      right:168px;
-      bottom: 75px;
-      z-index:4;
-      
-      
-    }
-      
-    
-    
-    .img7{
-      position:absolute;
-      left: 120px;
-      bottom:90px;
-      z-index:4;
-      }
-    
-    .img8{
-      position:absolute;
-      left:90px;
-      bottom: 120px;
-      z-index:4;
-      }
-    
-    .img9{
-      position:absolute;
-      top:162px;
-      left:82px;
-      z-index:4;
-      }
-    
-    .img10{
-      position:absolute;
-      top:120px;
-      left:87px;
-        z-index:4;
-    }
-    .img12{
-      position:absolute;
-      top:74px;
-      left: 168px
-    }
-    
-    
-    
-    
+            border-radius: 90%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+
+        }
+
+        /*   The circle itself */
+        .inner {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 90%;
+            align-self: center;
+        }
+
+        /*  The clock hours */
+        .i1 {
+            position: absolute;
+            left: 220px;
+            top: 88px;
+            z-index: 4;
+        }
+
+        .i2 {
+            position: absolute;
+            top: 120px;
+            right: 90px;
+            z-index: 4;
+        }
+
+        .i3 {
+            position: absolute;
+            top: 162px;
+            right: 83px;
+            z-index: 4;
+        }
+
+        .i4 {
+            position: absolute;
+            bottom: 120px;
+            right: 93px;
+            z-index: 4;
+        }
+
+        .i5 {
+            position: absolute;
+            bottom: 88px;
+            right: 120px;
+            z-index: 4;
+
+        }
+
+        .i6 {
+            position: absolute;
+            right: 168px;
+            bottom: 75px;
+            z-index: 4;
+
+
+        }
+
+
+
+        .i7 {
+            position: absolute;
+            left: 120px;
+            bottom: 90px;
+            z-index: 4;
+        }
+
+        .i8 {
+            position: absolute;
+            left: 90px;
+            bottom: 120px;
+            z-index: 4;
+        }
+
+        .i9 {
+            position: absolute;
+            top: 162px;
+            left: 82px;
+            z-index: 4;
+        }
+
+        .i10 {
+            position: absolute;
+            top: 120px;
+            left: 87px;
+            z-index: 4;
+        }
+
+        .i12 {
+            position: absolute;
+            top: 74px;
+            left: 168px
+        }
+
+        img {
+            width: 35px;
+        }
+
+        .img1 {
+            position: absolute;
+            left: 220px;
+            top: 88px;
+            z-index: 4;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 120px;
+            right: 90px;
+            z-index: 4;
+        }
+
+        .img3 {
+            position: absolute;
+            top: 162px;
+            right: 83px;
+            z-index: 4;
+        }
+
+        .img4 {
+            position: absolute;
+            bottom: 120px;
+            right: 93px;
+            z-index: 4;
+        }
+
+        .img5 {
+            position: absolute;
+            bottom: 88px;
+            right: 120px;
+            z-index: 4;
+
+        }
+
+        .img6 {
+            position: absolute;
+            right: 168px;
+            bottom: 75px;
+            z-index: 4;
+
+
+        }
+
+
+
+        .img7 {
+            position: absolute;
+            left: 120px;
+            bottom: 90px;
+            z-index: 4;
+        }
+
+        .img8 {
+            position: absolute;
+            left: 90px;
+            bottom: 120px;
+            z-index: 4;
+        }
+
+        .img9 {
+            position: absolute;
+            top: 162px;
+            left: 82px;
+            z-index: 4;
+        }
+
+        .img10 {
+            position: absolute;
+            top: 120px;
+            left: 87px;
+            z-index: 4;
+        }
+
+        .img12 {
+            position: absolute;
+            top: 74px;
+            left: 168px
+        }
     </style>
 </head>
+
 <body>
     <section id="temps">
-        <h1> Temperatures</h1> 
-            <div class="outer">
-           <div class="inner">
-               
-            </div>
-          </div>
-           
-                 <div class="i1">1</div>
-                  <div class="i2">2</div> 
-               <div class="i3">3</div>
-             <div class="i4">4</div>
-             <div class="i5">5</div>
-             <div class="i6">6</div>
-             <div class="i7">7</div>
-             <div class="i8">8</div>
-             <div class="i9">9</div>
-             <div class="i10">10</div>
-             
-             <img class="img1" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img1" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img2" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img3" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img4" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img5" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img6" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img7" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img8" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img9" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img10" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
-             <img class="img12" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">                                                    
-              
-             
-            
-   </section>
+        <h1> Temperatures</h1>
+        <div class="outer">
+            <div class="inner">
 
-     
-    
+            </div>
+        </div>
+
+        <div class="i1">1</div>
+        <div class="i2">2</div>
+        <div class="i3">3</div>
+        <div class="i4">4</div>
+        <div class="i5">5</div>
+        <div class="i6">6</div>
+        <div class="i7">7</div>
+        <div class="i8">8</div>
+        <div class="i9">9</div>
+        <div class="i10">10</div>
+
+        <img class="img1" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img1" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img2" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img3" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img4" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img5" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img6" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img7" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img8" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img9" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img10" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+        <img class="img12" src="https://cdn3.iconfinder.com/data/icons/weather-609/64/Weather_cloud_snow-512.png">
+
+
+
+    </section>
+
+
+
 </body>
+
 </html>
