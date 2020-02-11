@@ -13,11 +13,8 @@ html {
     box-sizing: inherit;
 }
 
-/* General Styles  */
-body {
-  
-    font-size: 10px;
-}
+
+
 
 
 
@@ -92,7 +89,7 @@ nav button {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 10px;
+     margin: 0; 
 }
 
 nav ul li a {
@@ -115,7 +112,7 @@ nav ul.hide {
 
 main {
 
-
+    padding: 10px 0;
     font-size: 1.2em;
     line-height: 3em;
     font-weight: bold;
@@ -132,7 +129,7 @@ main {
     text-align: center;
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 10px;
+    margin-top: 0;
     border-radius: 40px;
     border: solid 1px black;
 }
@@ -141,24 +138,35 @@ main {
 #temps,
 #conditions,
 #precipitation {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
     background-color: lightgreen;
     font-family: 'Sigmar One', cursive;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 10px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 8px;
-    border-radius: 40px;
-    border: 1px solid black;
-}
+    width: 350px; 
+     height:350px;
+    font-size: 16px;
+     border-radius: 40px;
+     border: 1px solid black;
+    
+ }
+ 
+ h1{
+   position: absolute;
+   top:-20px;
+   
+ }
+ 
+ 
 
 footer {
     display: block;
     background-color: lightcoral;
     padding: 5px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 3rem;
     font-family: 'Great Vibes', cursive;
 
@@ -183,6 +191,7 @@ footer {
     footer {
         max-width: 760px;
         margin: 0 auto;
+        padding: 10px 0;
        
     }
 
@@ -196,10 +205,12 @@ footer {
         align-items:center;
         justify-content:center;
         justify-content: space-evenly;
+        z-index: 6;
     }
 
     nav {
         position: static;
+        z-index:6;
 
     }
 
@@ -214,7 +225,7 @@ footer {
         text-align: center;
         margin-left: 100px;
         margin-right: 100px;
-        margin-top: 10px;
+        margin-top: 0px;
         border-radius: 40px;
     }
 
@@ -234,6 +245,192 @@ footer {
 }
 
     footer {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 }
+
+
+
+
+
+/* css for componnent */
+.outer{
+    width: 200px;
+    height: 200px;
+    background-color: darkgray;
+    position: relative;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  
+}
+/*   The circle itself */
+.inner{
+    position:relative;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 90%;
+    align-self: center;
+}
+
+/*  The clock hours */
+.i1{
+  position: absolute;
+  left:220px;
+  top:88px;
+  z-index:4;
+}
+.i2{
+  position: absolute;
+  top:120px;
+  right:90px;
+  z-index:4;
+}
+.i3{
+  position: absolute;
+  top:162px;
+  right:83px;
+  z-index:4;
+}
+.i4{
+  position: absolute;
+  bottom:120px;
+  right:93px;
+  z-index:4;
+}
+
+.i5{
+  position:absolute;
+  bottom:88px;
+  right:120px;
+  z-index:4;
+  
+}
+
+.i6{
+  position:absolute;
+  right:168px;
+  bottom: 75px;
+  z-index:4;
+  
+  
+}
+  
+
+
+.i7{
+  position:absolute;
+  left: 120px;
+  bottom:90px;
+  z-index:4;
+  }
+
+.i8{
+  position:absolute;
+  left:90px;
+  bottom: 120px;
+  z-index:4;
+  }
+
+.i9{
+  position:absolute;
+  top:162px;
+  left:82px;
+  z-index:4;
+  }
+
+.i10{
+  position:absolute;
+  top:120px;
+  left:87px;
+    z-index:4;
+}
+.i12{
+  position:absolute;
+  top:74px;
+  left: 168px
+}
+img{
+  width: 35px;
+}
+
+.img1{
+  position: absolute;
+  left:220px;
+  top:88px;
+  z-index:4;
+}
+.img2{
+  position: absolute;
+  top:120px;
+  right:90px;
+  z-index:4;
+}
+.img3{
+  position: absolute;
+  top:162px;
+  right:83px;
+  z-index:4;
+}
+.img4{
+  position: absolute;
+  bottom:120px;
+  right:93px;
+  z-index:4;
+}
+
+.img5{
+  position:absolute;
+  bottom:88px;
+  right:120px;
+  z-index:4;
+  
+}
+
+.img6{
+  position:absolute;
+  right:168px;
+  bottom: 75px;
+  z-index:4;
+  
+  
+}
+  
+
+
+.img7{
+  position:absolute;
+  left: 120px;
+  bottom:90px;
+  z-index:4;
+  }
+
+.img8{
+  position:absolute;
+  left:90px;
+  bottom: 120px;
+  z-index:4;
+  }
+
+.img9{
+  position:absolute;
+  top:162px;
+  left:82px;
+  z-index:4;
+  }
+
+.img10{
+  position:absolute;
+  top:120px;
+  left:87px;
+    z-index:4;
+}
+.img12{
+  position:absolute;
+  top:74px;
+  left: 168px
+}
+
+
