@@ -67,13 +67,12 @@ header img {
 
 nav {
     background-color: lightcyan;
-
     font-family: Verdana, sans-serif;
     list-style-type: none;
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 6;
 }
 
 
@@ -130,10 +129,12 @@ main {
 }
 
 #currentConditions {
+    background-color:white;
     font-family: 'Sigmar One', cursive;
     text-align: center;
     border-radius: 40px;
     border: solid 1px black;
+    margin-top:10px;
 }
 
 
@@ -147,11 +148,13 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: lightgreen;
+    background-color:white;
     font-family: 'Sigmar One', cursive;
     font-size: 16px;
     border-radius: 40px;
     border: 1px solid black;
+    margin: 0 auto;
+    margin-top:10px;
 
 }
 
@@ -165,7 +168,7 @@ main {
 
 footer {
     display: block;
-    background-color: lightcoral;
+    background-color: lightcyan;
     padding: 5px;
     text-align: center;
     margin-top: 0;
@@ -188,10 +191,6 @@ footer {
 @media only screen and (min-width: 760px) {
 
 
-
-   
-
-    }
 
     nav button {
         display: none;
@@ -225,28 +224,38 @@ footer {
         text-align: center;
         border-radius: 40px;
     }
+   
+    #temps, #conditions, #precipitation{
+        margin:0;
+    }
+     
 
-    
     #temps{
     justify-self: left;
+    height:300px;
+    width:300px;
         
 
     }
    
     #conditions{
     justify-self: center;
+    height:300px;
+    width:300px;
 
     }
 
  #precipitation {
      justify-self: right;
+     height:300px;
+    width:300px;
  }
- 
+
     footer {
         margin:0;
     }
 
-
+}
 
 
 
