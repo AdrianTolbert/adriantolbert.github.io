@@ -122,7 +122,7 @@ main {
 
 #temps h1, #conditions h1, #precipitation h1{
     position:absolute;
-    top: -10px;
+    top: -20px;
 
 }
 
@@ -230,27 +230,20 @@ footer {
         margin:0;
     }
      
+    .large-screen{
+        display:flex;
+        justify-content:center;
+        justify-content: space-evenly;
+    }
 
-    #temps{
-    justify-self: left;
-    height:300px;
-    width:300px;
+    #temps, #conditions, #precipitation{
+    margin: 50px 50px;
+    
         
 
     }
    
-    #conditions{
-    justify-self: center;
-    height:300px;
-    width:300px;
-
-    }
-
- #precipitation {
-     justify-self: right;
-     height:300px;
-    width:300px;
- }
+    
 
     footer {
         margin:0;
