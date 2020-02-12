@@ -1,11 +1,19 @@
 @media screen and (min-width: 50em){
     header img{
-        float:right;
-        margin-right: 10%;
+    width: 250px;
+    height:250px;
+    
+       
     }
-    header{
-        text-align: start;  
-        background-color: aqua;
+    .header{
+        margin-top:30px;
+        margin-left:10px;
+        font:white;
     }
+
+    .tagline{
+        text-align:center;
+    }
+    
 }
 

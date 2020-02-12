@@ -130,12 +130,12 @@ main {
     background-color:white;
     font-family: 'Sigmar One', cursive;
     text-align: center;
-    border-radius: 40px;
-    border: solid 1px black;
+    margin: 0px;
+
 }
 
 #currentConditions {
-    background-color:white;
+    background-color:yellow;
     font-family: 'Sigmar One', cursive;
     text-align: center;
     border-radius: 40px;
@@ -219,7 +219,7 @@ footer {
     }
 
     #currentConditions {
-        background-color: lightcoral;
+        background-color:yellow;
         font-family: 'Sigmar One', cursive;
         padding-bottom: 100px;
         text-align: center;
