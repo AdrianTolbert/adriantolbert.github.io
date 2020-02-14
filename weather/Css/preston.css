@@ -89,6 +89,7 @@ nav button {
 
 nav ul {
     list-style-type: none;
+    
     padding: 0;
     margin: 0;
 }
@@ -98,7 +99,6 @@ nav ul li a {
     padding: .8rem;
     text-decoration: none;
     color: black;
-    border-top: 1px solid;
     font-size: 1rem;
 
 }
@@ -113,34 +113,49 @@ nav ul.hide {
 
 main {
 
-    padding: 10px 0;
+    padding:10px 0;
     font-size: 1.2em;
     line-height: 3em;
     font-weight: bold;
     background-color: lightgray
 }
+#currentConditions h1{
+    margin:0
+}
 
 #temps h1, #conditions h1, #precipitation h1{
     position:absolute;
-    top: -20px;
+    top:-20px;
 
 }
 
 #locationName {
-    background-color:white;
+    background-color: transparent;
     font-family: 'Sigmar One', cursive;
     text-align: center;
-    margin: 0px;
 
 }
 
+#locationName h1{
+    margin-bottom:0;
+    
+}
+
+#locationName h3{
+    margin-top: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+}
+
 #currentConditions {
-    background-color:yellow;
+    width:auto;
+    font-size:10px;
+    height: 200px;
+    background-color:white;
     font-family: 'Sigmar One', cursive;
     text-align: center;
-    border-radius: 40px;
-    border: solid 1px black;
     margin-top:10px;
+    border: black solid 5px;
 }
 
 
@@ -179,6 +194,9 @@ footer {
 
 }
 
+
+
+
 /* ClearFix: Force an element no to collapse
 .clearfix:after {
     content: "";
@@ -203,7 +221,8 @@ footer {
         align-items: center;
         justify-content: center;
         justify-content: space-evenly;
-        border:black;
+        border-top:black 3px solid;
+        border-bottom:black 3px solid;
     }
 
     nav {
@@ -217,14 +236,19 @@ footer {
         border: none;
 
     }
-
+#locationName{
+    text-align:left;
+}
     #currentConditions {
-        background-color:yellow;
+        background-color:white;
         font-family: 'Sigmar One', cursive;
-        padding-bottom: 100px;
+        margin: 0 20%;
         text-align: center;
-        border-radius: 40px;
+        border: solid 2px;
+       
     }
+    
+    
    
     #temps, #conditions, #precipitation{
         margin:0;
@@ -254,184 +278,241 @@ footer {
 
 
 
-/* css for componnent */
-.outer{
+ /* Css Section for the Components. */
+
+ .outer {
     width: 200px;
     height: 200px;
     background-color: darkgray;
     position: relative;
+  
     border-radius: 90%;
     display: flex;
     justify-content: center;
     margin: auto;
-  
+
 }
-  /* The circle itself  */
-.inner{
-    position:relative;
+
+/*   The circle itself */
+.inner {
+    position: relative;
     width: 150px;
     height: 150px;
     background-color: #fff;
     border-radius: 90%;
     align-self: center;
 }
- /*
-  The clock hours 
-.i1{
-  position: absolute;
-  left:220px;
-  top:88px;
-  z-index:4;
-}
-.i2{
-  position: absolute;
-  top:120px;
-  right:90px;
-  z-index:4;
-}
-.i3{
-  position: absolute;
-  top:162px;
-  right:83px;
-  z-index:4;
-}
-.i4{
-  position: absolute;
-  bottom:120px;
-  right:93px;
-  z-index:4;
+
+/*  The inner and outer number font sizes */
+.i0, .i1, .i2, .i3, .i4, .i5, .i6, .i7, .i8, .i9, .i10 {
+    font-size: 18px;
+} 
+.o0, .o1, .o2, .o3, .o4, .o5, .o6, .o7, .o8, .o9, .o10{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.i5{
-  position:absolute;
-  bottom:88px;
-  right:120px;
-  z-index:4;
-  
+ /*  inner component positions */
+
+.i0{
+    
+    position: absolute;
+    top: -34px;
+    left: 95px;
+    z-index: 4
+}
+.i1 {
+    position: absolute;
+    right: 47px;
+    top: -21px;
+    z-index: 4
 }
 
-.i6{
-  position:absolute;
-  right:168px;
-  bottom: 75px;
-  z-index:4;
-  
-  
-}
-  
-
-
-.i7{
-  position:absolute;
-  left: 120px;
-  bottom:90px;
-  z-index:4;
-  }
-
-.i8{
-  position:absolute;
-  left:90px;
-  bottom: 120px;
-  z-index:4;
-  }
-
-.i9{
-  position:absolute;
-  top:162px;
-  left:82px;
-  z-index:4;
-  }
-
-.i10{
-  position:absolute;
-  top:120px;
-  left:87px;
-    z-index:4;
-}
-.i12{
-  position:absolute;
-  top:74px;
-  left: 168px
-}
-img{
-  width: 35px;
+.i2 {
+    position: absolute;
+    top: 7px;
+    right: 17px;
+    z-index: 4
 }
 
-.img1{
-  position: absolute;
-  left:220px;
-  top:88px;
-  z-index:4;
-}
-.img2{
-  position: absolute;
-  top:120px;
-  right:90px;
-  z-index:4;
-}
-.img3{
-  position: absolute;
-  top:162px;
-  right:83px;
-  z-index:4;
-}
-.img4{
-  position: absolute;
-  bottom:120px;
-  right:93px;
-  z-index:4;
+.i3 {
+    position: absolute;
+    top: 48px;
+    right: 7px;
+     z-index: 4;
 }
 
-.img5{
-  position:absolute;
-  bottom:88px;
-  right:120px;
-  z-index:4;
-  
+.i4 {
+    position: absolute;
+    bottom: 14px;
+    right: 15px;
+    z-index: 4;
 }
 
-.img6{
-  position:absolute;
-  right:168px;
-  bottom: 75px;
-  z-index:4;
-  
-  
-}
-  
+.i5 {
+    position: absolute;
+    bottom: -20px;
+    right: 49px;
+    z-index: 4;
 
-
-.img7{
-  position:absolute;
-  left: 120px;
-  bottom:90px;
-  z-index:4;
-  }
-
-.img8{
-  position:absolute;
-  left:90px;
-  bottom: 120px;
-  z-index:4;
-  }
-
-.img9{
-  position:absolute;
-  top:162px;
-  left:82px;
-  z-index:4;
-  }
-
-.img10{
-  position:absolute;
-  top:120px;
-  left:87px;
-    z-index:4;
-}
-.img12{
-  position:absolute;
-  top:74px;
-  left: 168px
 }
 
-*/
+.i6 {
+    position: absolute;
+    bottom: -35px;
+    left: 92px; 
+    z-index: 4;
+
+
+}
+
+
+
+.i7 {
+    position: absolute;
+    left: 49px;
+    bottom: -18px;
+    z-index: 4;
+}
+
+.i8 {
+    position: absolute;
+    left: 16px;
+    bottom: 13px;
+    z-index: 4;
+}
+
+.i9 {
+    position: absolute;
+    top: 48px;
+    left: 7px;
+    z-index: 4;
+}
+
+.i10 {
+    position: absolute;
+    top: 7px;
+    left: 14px;
+    z-index: 4;
+}
+
+
+
+
+img {
+    width: 35px;
+}
+
+/* outer component positions */
+
+.o0{
+    
+    position: absolute;
+    top: -73px;
+    left: 89px;;
+    z-index: 4
+}
+.o1 {
+    position: absolute;
+    right: 17px;
+    top: -53px;
+    z-index: 4
+}
+
+.o2 {
+    position: absolute;
+    top: -7px;
+    right: -25px;
+    z-index: 4
+}
+
+.o3 {
+    position: absolute;
+    top: 45px;
+    right: -36px;
+     z-index: 4;
+}
+
+.o4 {
+    position: absolute;
+    bottom: -11px;
+    right: -23px;
+    z-index: 4;
+}
+
+.o5 {
+    position: absolute;
+    bottom: -54px;
+    right: 16px;
+    z-index: 4;
+
+}
+
+.o6 {
+    position: absolute;
+    bottom: -69px;
+    left: 86px;
+    z-index: 4;
+
+
+}
+
+
+
+.o7 {
+    position: absolute;
+    left: 25px;
+    bottom: -56px;
+    z-index: 4;
+}
+
+.o8 {
+    position: absolute;
+    left: -24px;
+    bottom: -12px;
+    z-index: 4;
+}
+
+.o9 {
+    position: absolute;
+    top: 45px;
+    left: -35px;
+    z-index: 4;
+}
+
+.o10 {
+    position: absolute;
+    top: -8px;
+    left: -26px;
+    z-index: 4;
+}
+
+
+
+.slider-i0{
+position: absolute;
+    top: ;
+    left: ;
+    z-index: 4;
+}
+
+.center{
+    position: absolute;
+    top:70px;
+    font-size:40px;
+}
+.small-percent{
+    font-size:20px;
+}
+
+.slider{
+    position: absolute;
+    top: 1px;
+    right: 87px;
+      width: 23px;
+      height: 23px;
+      background-color:black;
+      border-radius: 90%;
+      align-self: center;
+    z-index: 4;
+}
