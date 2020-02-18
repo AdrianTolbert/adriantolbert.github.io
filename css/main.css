@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap'); */
 
 * {
     margin: 0;
@@ -9,14 +9,16 @@
 
 header {
 display:flex;
-justify-content:center;
 background-color: Red;
-width: 100%;
+width: auto;
 font-size: 30px;
-padding: 5% 0;
+font-family: 'Sriracha', cursive;
+height:300px;
 text-align:center;
 
 }
+
+
  h2{
      padding:5%;
      border-bottom-style: solid;
@@ -32,7 +34,7 @@ nav ul{
 header img {
   width: 100px;
   height: 100px;
-  border: dotted;
+ 
   
   
 }
@@ -44,7 +46,7 @@ footer {
     flex-direction:column;
     background-color:red;
     width: auto;
-    height: 70px;
+    height: auto;
     text-align:center;
    
 }

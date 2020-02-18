@@ -1,0 +1,16 @@
+
+* {
+    margin: 0;
+    box-sizing:border-box;
+   
+}
+main{
+    display: block;
+    background-color:lightgreen;
+    
+}
+ header{
+     text-align:center;
+     background-color: gray;
+ }
+

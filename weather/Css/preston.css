@@ -100,6 +100,7 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 1rem;
+    
 
 }
 
@@ -233,7 +234,8 @@ footer {
 
 
     nav ul li a {
-        border: none;
+        border-left: black 3px solid;
+        border-right: black 3px solid;
 
     }
 #locationName{
