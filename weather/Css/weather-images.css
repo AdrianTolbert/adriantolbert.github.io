@@ -15,15 +15,31 @@
      height:100px;
      margin-bottom:10px;
      font-family: 'Sriracha', cursive;
+     border: solid 4px black;
+     margin: 0;
  }
 
 img{
     display: block;
     padding: 5px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-color: black;
     border-image: initial;
     margin: auto;
     margin-bottom: 10px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color:gray;
+    border: solid 4px black;
+   
+  
+   
 }
