@@ -1,16 +1,29 @@
-
+ @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap'); 
 * {
     margin: 0;
     box-sizing:border-box;
    
 }
-main{
-    display: block;
-    background-color:lightgreen;
-    
-}
+
+
+
  header{
-     text-align:center;
+     Display:flex;
+     justify-content:center;
+     align-items:center;
      background-color: gray;
+     height:100px;
+     margin-bottom:10px;
+     font-family: 'Sriracha', cursive;
  }
 
+img{
+    display: block;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    margin: auto;
+    margin-bottom: 10px;
+}
