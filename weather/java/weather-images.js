@@ -1,3 +1,4 @@
+//activates lazy loading 
 let imagesToLoad = document.querySelectorAll('source[data-src]');
 
 const loadImages = (image) => {
@@ -7,9 +8,10 @@ const loadImages = (image) => {
   };
 };
 
-imagesToLoad.forEach((img) => {
-    loadImages(img);
-  });
+// imagesToLoad.forEach((img) => {
+//     loadImages(img);
+//   });
+//  Gives you the load as you scroll
 
   if('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((items, observer) => {
@@ -29,6 +31,7 @@ imagesToLoad.forEach((img) => {
     });
   }
 
+// footer javascript
 
   let daynames = [
     "Sunday",
