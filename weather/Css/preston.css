@@ -82,14 +82,16 @@ nav {
 
 nav button {
     margin: .2rem 2%;
-    background-color: transparent;
+    background-color: white;
     font-size: 1.6rem;
     border: none;
+    
+    
 }
 
 nav ul {
     list-style-type: none;
-    
+
     padding: 0;
     margin: 0;
 }
@@ -100,7 +102,7 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    
+
 
 }
 
@@ -114,19 +116,24 @@ nav ul.hide {
 
 main {
 
-    padding:10px 0;
+    padding: 10px 0;
     font-size: 1.2em;
     line-height: 3em;
     font-weight: bold;
     background-color: lightgray
 }
-#currentConditions h1{
-    margin:0
-}
 
-#temps h1, #conditions h1, #precipitation h1{
-    position:absolute;
-    top:-20px;
+#currentConditions h1 {
+    margin: 0
+}
+#conflex{
+   width:100%; 
+}
+#temps h1,
+#conditions h1,
+#precipitation h1 {
+    position: absolute;
+    top: -20px;
 
 }
 
@@ -137,18 +144,78 @@ main {
 
 }
 
-#locationName h1{
-    margin-bottom:0;
-    
+#locationName h1 {
+    margin-bottom: 0;
+
 }
 
-#locationName h3{
+#locationName h3 {
     margin-top: 0;
     font-family: Verdana, sans-serif;
     font-size: 20px;
 }
 
-#currentConditions {
+/* Current Conditions Section */
+.tile {
+    width: auto;
+    font-size: 10px;
+    height: 200px;
+    background-color: white;
+    font-family: 'Sigmar One', cursive;
+    text-align: center;
+    margin-top: 10px;
+    border: black solid 2px;
+    border-radius: 40px;
+}
+
+#weather-temps {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 10px;
+
+
+}
+
+#temp {
+    font-size: 6em;
+    margin: 10px 0 0 0;
+    order: -1;
+    width: 100%;
+    display: block;
+}
+
+#high {
+    color: red;
+    font-size: 4em;
+    margin: 10px 10px 0 0;
+
+}
+
+#low {
+    color: blue;
+    font-size: 4em;
+    margin: 10px 0 0 10px;
+}
+
+#wind-speed {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 3em;
+}
+
+#feels-like {
+    display: none;
+}
+
+#wind-gusts {
+    display: none;
+}
+
+
+/* #currentConditions {
     width:auto;
     font-size:10px;
     height: 200px;
@@ -157,26 +224,26 @@ main {
     text-align: center;
     margin-top:10px;
     border: black solid 5px;
-}
+} */
 
-
+/* The 3 weather dial sections. */
 #temps,
 #conditions,
 #precipitation {
-    width: 350px; 
-    height:350px;
+    width: 350px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color:white;
+    background-color: white;
     font-family: 'Sigmar One', cursive;
     font-size: 10px;
     border-radius: 40px;
     border: 1px solid black;
     margin: 0 auto;
-    margin-top:10px;
+    margin-top: 10px;
 
 }
 
@@ -222,57 +289,116 @@ footer {
         align-items: center;
         justify-content: center;
         justify-content: space-evenly;
-        border-top:black 3px solid;
-        border-bottom:black 3px solid;
+        /* border-top: black 3px solid;
+        border-bottom: black 3px solid; */
     }
 
     nav {
         position: static;
-        border:black;
+        border: black;
 
     }
 
 
-    nav ul li a {
-        border-left: black 3px solid;
-        border-right: black 3px solid;
+    nav ul li a{
+        border: black solid 2px;
+        /* padding:1px;
+        margin-bottom:10px; */
+    }
 
-    }
-#locationName{
-    text-align:left;
-}
-    #currentConditions {
-        background-color:white;
-        font-family: 'Sigmar One', cursive;
-        margin: 0 20%;
-        text-align: center;
-        border: solid 2px;
-       
-    }
     
-    
-   
-    #temps, #conditions, #precipitation{
+
+    #locationName {
+        text-align: left;
+    }
+
+    #weather-temps {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    #temp {
+        width: auto;
+        font-size: 8em;
+        margin: 0em;
+        order: 0;
+        padding: 1em .7em 0 .7em;
+    }
+
+
+    #high {
+        font-size: 4em;
+        margin-right: 100px;
+        color: red;
+
+    }
+
+    #low {
+
+        margin-left: 100px;
+        color: blue;
+        font-size: 4em;
+    }
+
+
+
+    #feels-like {
+        display: initial;
+        width: 100%;
+        color: black;
+        font-size: 2em;
+        margin-top: 5px;
+    }
+ /* css to get wind and gust to display next to each other */
+
+ #conflex{
+     display:flex;
+     width:50%;
+     justify-content: space-between;
+ }
+
+    #wind-gusts {
+        display:inherit;
+        font-size: 1.5em;
+        margin:0;
+
+    }
+
+    #wind-speed {
+        width:initial;
+        font-size: 1.5em;
         margin:0;
     }
-     
-    .large-screen{
-        display:flex;
-        justify-content:center;
+
+/* cssfor the large screen dials  */
+    #temps,
+    #conditions,
+    #precipitation {
+        margin: 0;
+    }
+
+    .large-screen {
+        display: flex;
+        justify-content: center;
         justify-content: space-evenly;
     }
 
-    #temps, #conditions, #precipitation{
-    margin: 50px 50px;
-    
-        
+    #temps,
+    #conditions,
+    #precipitation {
+        margin: 50px 50px;
+
+
 
     }
-   
-    
+
+
 
     footer {
-        margin:0;
+        margin: 0;
     }
 
 }
@@ -280,14 +406,14 @@ footer {
 
 
 
- /* Css Section for the Components. */
+/* Css Section for the Components. */
 
- .outer {
+.outer {
     width: 200px;
     height: 200px;
     background-color: darkgray;
     position: relative;
-  
+
     border-radius: 90%;
     display: flex;
     justify-content: center;
@@ -306,23 +432,46 @@ footer {
 }
 
 /*  The inner and outer number font sizes */
-.i0, .i1, .i2, .i3, .i4, .i5, .i6, .i7, .i8, .i9, .i10 {
+.i0,
+.i1,
+.i2,
+.i3,
+.i4,
+.i5,
+.i6,
+.i7,
+.i8,
+.i9,
+.i10 
+.i11{
     font-size: 18px;
-} 
-.o0, .o1, .o2, .o3, .o4, .o5, .o6, .o7, .o8, .o9, .o10{
+}
+
+.o0,
+.o1,
+.o2,
+.o3,
+.o4,
+.o5,
+.o6,
+.o7,
+.o8,
+.o9,
+.o10 {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
- /*  inner component positions */
+/*  inner component positions */
 
-.i0{
-    
+.i0 {
+
     position: absolute;
     top: -34px;
     left: 95px;
     z-index: 4
 }
+
 .i1 {
     position: absolute;
     right: 47px;
@@ -341,7 +490,7 @@ footer {
     position: absolute;
     top: 48px;
     right: 7px;
-     z-index: 4;
+    z-index: 4;
 }
 
 .i4 {
@@ -356,20 +505,13 @@ footer {
     bottom: -20px;
     right: 49px;
     z-index: 4;
-
 }
-
 .i6 {
     position: absolute;
     bottom: -35px;
-    left: 92px; 
+    left: 92px;
     z-index: 4;
-
-
 }
-
-
-
 .i7 {
     position: absolute;
     left: 49px;
@@ -396,24 +538,31 @@ footer {
     top: 7px;
     left: 14px;
     z-index: 4;
+    font-size:18px;
+}
+.i11 {
+    position: absolute;
+    top: -24px;
+    left: 46px;
+    z-index: 4;
+    font-size:18px;
 }
 
 
 
 
-img {
-    width: 35px;
-}
 
 /* outer component positions */
 
-.o0{
-    
+.o0 {
+
     position: absolute;
     top: -73px;
-    left: 89px;;
+    left: 89px;
+    ;
     z-index: 4
 }
+
 .o1 {
     position: absolute;
     right: 17px;
@@ -432,7 +581,7 @@ img {
     position: absolute;
     top: 45px;
     right: -36px;
-     z-index: 4;
+    z-index: 4;
 }
 
 .o4 {
@@ -455,11 +604,7 @@ img {
     bottom: -69px;
     left: 86px;
     z-index: 4;
-
-
 }
-
-
 
 .o7 {
     position: absolute;
@@ -490,31 +635,69 @@ img {
 }
 
 
+/* css for the center image */
+img {
+    width: 35px;
 
-.slider-i0{
-position: absolute;
-    top: ;
-    left: ;
-    z-index: 4;
 }
 
-.center{
+.center {
     position: absolute;
-    top:70px;
-    font-size:40px;
-}
-.small-percent{
-    font-size:20px;
+    top: 70px;
+    font-size: 40px;
 }
 
-.slider{
-    position: absolute;
-    top: 1px;
-    right: 87px;
-      width: 23px;
-      height: 23px;
-      background-color:black;
-      border-radius: 90%;
-      align-self: center;
-    z-index: 4;
+.small-percent {
+    font-size: 20px;
 }
+
+.slider {
+
+    width: 23px;
+    height: 23px;
+    background-color: orange;
+    border-radius: 90%;
+   
+}
+
+/* background for container */
+
+#curWeather {
+    background-size: cover;
+    padding:20px;
+   }
+
+   /* Background pictures for the conditions */
+.clear {
+    background-image: url("/adriantolbert.github.io/Wk6images/clear-main.jpg"); 
+ }
+.lgclear {
+    background-image: url("/adriantolbert.github.io/Wk6images/clear-large.jpg"); 
+ }
+.fog {
+    background-image: url("/adriantolbert.github.io/Wk6images/fog-main.jpg"); 
+ }
+.lgfog {
+    background-image: url("/adriantolbert.github.io/Wk6images/fog-large.jpg"); 
+}
+.snow {
+    background-image: url("/adriantolbert.github.io/Wk6images/snow-main.jpg"); 
+}
+.lgsnow {
+    background-image: url("/adriantolbert.github.io/Wk6images/snow-large.jpg"); 
+}
+.rain {
+    background-image: url("/adriantolbert.github.io/Wk6images/rain-main.jpg"); 
+}
+.lgrain {
+    background-image: url("/adriantolbert.github.io/Wk6images/rain-large.jpg"); 
+ }
+.cloud {
+    background-image: url("/adriantolbert.github.io/Wk6images/clouds-main.jpg"); 
+}
+.lgcloud {
+    background-image: url("/adriantolbert.github.io/Wk6images/clouds-large.jpg"); 
+}
+
+
+  

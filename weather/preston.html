@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/weather/Css/preston.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/adriantolbert.github.io/weather/Css/preston.css">
+    <link rel="stylesheet" href="/adriantolbert.github.io/css/normalize.css">
     <title>PopRock Weather</title>
 </head>
 
@@ -14,7 +14,7 @@
     <div id="wrapper">
         <header>
             <picture>
-                <img src="/weather/images/WeatherSiteLogo.png" alt="Weather logo">
+                <img src="/adriantolbert.github.io/weather/images/WeatherSiteLogo.png" alt="Weather logo">
             </picture>
 
             <section class="headings">
@@ -29,7 +29,8 @@
 
         </header>
         <nav>
-            <button onclick="toggleMenu()"> &#9776;</button>
+            <!-- <button onclick="toggleMenu()"> &#9776menu;</button> -->
+            <button id="mobileMenu"> &#9776Menu</button>
             <ul id="primaryNav" class="hide">
 
                 <li><a href="#">Home</a></li>
@@ -48,153 +49,173 @@
                 <h3>GPS:42.543, 111.5231</h3>
             </section>
 
-            <section id="currentConditions">
-                <h1>Feels Like.....</h1>
-            </section>
+            <div id="curWeather" class="clear">
+             <!-- Current Conditions section -->
 
-            <div class="large-screen">
+                <section id="weather-temps" class="tile">
 
-                <section id="temps">
-                    <h1> Temperatures</h1>
-                    <div class="outer">
-                       <!-- outer numbers or icons -->
-                        <p class="o0">51</p>
-                        <p class="o1">53</p>
-                        <p class="o2">55</p>
-                        <p class="o3">57</p>
-                        <p class="o4">58</p>
-                        <p class="o5">57</p>
-                        <p class="o6">58</p>
-                        <p class="o7">58</p>
-                        <p class="o8">55</p>
-                        <p class="o9">53</p>
-                        <p class="o10">52</p>
-                        
-                         
-                        <!-- inner circle -->
-                        <div class="inner"></div>
-                        
-                        <!-- dot that covers inner numbers-->
-                        
-                        <div class="slider"></div>
+                    <p id="high"><span id="displayedHigh">58</span>&deg;F</p>
+                    <h3 id="temp"><span id="displayedTemp">51</span>&deg;F</h3>
+                    <p id="low"><span id="displayedLow">34</span>&deg;F</p>
+                    <p id="feels-like">Feels Like: <span id="feelTemp"></span>&deg;F</p>
+                    <div id="conflex">
+                        <p id="wind-speed" class="wind"><span id="displayedWind">&#x1F4A8;4.8</span>mph</p>
+                        <p id="wind-gusts" class="wind">Gusts: <span id="displayedGusts">8</span>mph</p>
+                    </div>
+                </section>
 
-                        <!-- inner numbers -->
-                        
-                        <p class="i0">0</p>
-                        <p class="i1">1</p>
-                        <p class="i2">2</p>
-                        <p class="i3">3</p>
-                        <p class="i4">4</p>
-                        <p class="i5">5</p>
-                        <p class="i6">6</p>
-                        <p class="i7">7</p>
-                        <p class="i8">8</p>
-                        <p class="i9">9</p>
-                        <p class="i10">10</p>
-                         
-                        <!--center img/icon/letter-->
-                      <div class="center">&deg;F</div>
+                <!-- Creates the view for the large screen by displaying them in flex -->
+                <div class="large-screen">
+
+                    <!-- Dial for the temperature -->
+                    <section id="temps">
+                        <h1> Temperatures</h1>
+                        <div class="outer">
+                            <!-- outer numbers or icons -->
+                            <p class="o0">51</p>
+                            <p class="o1">53</p>
+                            <p class="o2">55</p>
+                            <p class="o3">57</p>
+                            <p class="o4">58</p>
+                            <p class="o5">57</p>
+                            <p class="o6">58</p>
+                            <p class="o7">58</p>
+                            <p class="o8">55</p>
+                            <p class="o9">53</p>
+                            <p class="o10">52</p>
+
+
+
+                            <!-- inner circle -->
+                            <div class="inner"></div>
+
+                            <!-- dot that covers inner numbers-->
+
+                            <!-- <div class="slider"></div> -->
+
+                            <!-- inner numbers -->
+
+                            <p class="i0">12</p>
+                            <p class="i1">1</p>
+                            <p class="i2">2</p>
+                            <p class="i3">3</p>
+                            <p class="i4" class="slider">4</p>
+                            <p class="i5">5</p>
+                            <p class="i6">6</p>
+                            <p class="i7">7</p>
+                            <p class="i8">8</p>
+                            <p class="i9">9</p>
+                            <p class="i10">10</p>
+                            <p class="i11">11</p>
+
+                            <!--center img/icon/letter-->
+                            <div class="center">&deg;F</div>
 
                         </div>
 
 
-                </section>
+                    </section>
 
-                <section id="conditions">
-                    <h1>Conditions</h1>
-                    <div class="outer">
-                        
-                                <!-- outer numbers or icons -->
-                                 <p class="o0">&#9729;</p>
-                                 <p class="o1">⚡</p>
-                                 <p class="o2">&#9729;</p>
-                                 <p class="o3">&#9728;</p>
-                                 <p class="o4">&#9728;</p>
-                                 <p class="o5">&#9728;</p>
-                                 <p class="o6">⚡</p>
-                                 <p class="o7">⚡</p>
-                                 <p class="o8">&#9729;</p>
-                                 <p class="o9">&#9729;</p>
-                                 <p class="o10">&#9729;</p>
-                                 
-                                  
-                                 <!-- inner circle -->
-                                 <div class="inner"></div>
-                                 
-                                 <!-- dot that covers inner numbers-->
-                                 
-                                 <div class="slider"></div>
-         
-                                 <!-- inner numbers -->
-                                 
-                                 <p class="i0">0</p>
-                                 <p class="i1">1</p>
-                                 <p class="i2">2</p>
-                                 <p class="i3">3</p>
-                                 <p class="i4">4</p>
-                                 <p class="i5">5</p>
-                                 <p class="i6">6</p>
-                                 <p class="i7">7</p>
-                                 <p class="i8">8</p>
-                                 <p class="i9">9</p>
-                                 <p class="i10">10</p>
-                                  
+                    <!-- Dial for the weather conditions -->
+                    <section id="conditions">
+                        <h1>Conditions</h1>
+                        <div class="outer">
 
-                        
-                    </div>
-                </section>
-
-                <section id="precipitation">
-                    <h1>Precipitation</h1>
-                    <div class="outer">
-        
-                        <!-- outer numbers or icons -->
-                        <p class="o0">10</p>
-                        <p class="o1">20</p>
-                        <p class="o2">30</p>
-                        <p class="o3">40</p>
-                        <p class="o4">40</p>
-                        <p class="o5">60</p>
-                        <p class="o6">80</p>
-                        <p class="o7">90</p>
-                        <p class="o8">20</p>
-                        <p class="o9">50</p>
-                        <p class="o10">20</p>
-                        
-                         
-                        <!-- inner circle -->
-                        <div class="inner"></div>
-                        
-                        <!-- dot that covers inner numbers-->
-                        
-                        <div class="slider"></div>
-
-                        <!-- inner numbers -->
-                        
-                        <p class="i0">0</p>
-                        <p class="i1">1</p>
-                        <p class="i2">2</p>
-                        <p class="i3">3</p>
-                        <p class="i4">4</p>
-                        <p class="i5">5</p>
-                        <p class="i6">6</p>
-                        <p class="i7">7</p>
-                        <p class="i8">8</p>
-                        <p class="i9">9</p>
-                        <p class="i10">10</p>
-                         
-
-                        
+                            <!-- outer numbers or icons -->
+                            <p class="o0">&#9729;</p>
+                            <p class="o1">⚡</p>
+                            <p class="o2">&#9729;</p>
+                            <p class="o3">&#9728;</p>
+                            <p class="o4">&#9728;</p>
+                            <p class="o5">&#9728;</p>
+                            <p class="o6">⚡</p>
+                            <p class="o7">⚡</p>
+                            <p class="o8">&#9729;</p>
+                            <p class="o9">&#9729;</p>
+                            <p class="o10">&#9729;</p>
 
 
 
-                        <div class="center">&#9730;<span class="small-percent">%</span></div>
-                    </div>
-                </section>
+                            <!-- inner circle -->
+                            <div class="inner"></div>
+
+                            <!-- dot that covers inner numbers-->
+
+                            <!-- <div class="slider"></div> -->
+
+                            <!-- inner numbers -->
+
+                            <p class="i0">12</p>
+                            <p class="i1">1</p>
+                            <p class="i2">2</p>
+                            <p class="i3">3</p>
+                            <p class="i4">4</p>
+                            <p class="i5">5</p>
+                            <p class="i6">6</p>
+                            <p class="i7">7</p>
+                            <p class="i8">8</p>
+                            <p class="i9">9</p>
+                            <p class="i10">10</p>
+                            <p class="i11">11</p>
+
+
+
+                        </div>
+                    </section>
+                    <!-- Dial for the precipitation -->
+                    <section id="precipitation">
+                        <h1>Precipitation</h1>
+                        <div class="outer">
+
+                            <!-- outer numbers or icons -->
+                            <p class="o0">10</p>
+                            <p class="o1">20</p>
+                            <p class="o2">30</p>
+                            <p class="o3">40</p>
+                            <p class="o4">40</p>
+                            <p class="o5">60</p>
+                            <p class="o6">80</p>
+                            <p class="o7">90</p>
+                            <p class="o8">20</p>
+                            <p class="o9">50</p>
+                            <p class="o10">20</p>
+
+
+                            <!-- inner circle -->
+                            <div class="inner"></div>
+
+                            <!-- dot that covers inner numbers-->
+
+                            <!-- <div class="slider"></div> -->
+
+                            <!-- inner numbers -->
+
+                            <p class="i0">12</p>
+                            <p class="i1">1</p>
+                            <p class="i2">2</p>
+                            <p class="i3">3</p>
+                            <p class="i4">4</p>
+                            <p class="i5">5</p>
+                            <p class="i6">6</p>
+                            <p class="i7">7</p>
+                            <p class="i8">8</p>
+                            <p class="i9">9</p>
+                            <p class="i10">10</p>
+                            <p class="i11">11</p>
+
+
+
+
+
+
+                            <div class="center">&#9730;<span class="small-percent">%</span></div>
+                        </div>
+                    </section>
         </main>
 
     </div>
-
+</div>
+    <!-- </div> -->
     <footer>
         &copy; 2020 | Adrian Tolbert <br>
         Current date: <span id="currentdate"></span><br>
@@ -203,8 +224,9 @@
 
     </footer>
 
-    <script src="/weather/java/preston.js"></script>
     </div>
+    <!-- <script src="/adriantolbert.github.io/weather/java/preston.js"></script> -->
+    <script src="/adriantolbert.github.io/weather/java/function.js"></script>
 </body>
 
 </html>
