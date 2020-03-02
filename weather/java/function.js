@@ -28,7 +28,7 @@ menuButton.addEventListener('click',toggleMenu);
 // // calculate the time ball function
 let hour = "8";
 timeBall(hour);
-//Change background image
+//Change background image to display the current weather
 changeSummaryImage("fog");
 });
 
@@ -149,7 +149,7 @@ function timeBall(hour){
 * Displays the  correct background img depending on the weather outside
 *********************************************************************** */
 function changeSummaryImage (currCond){
-
+    //gives imgcon the curWaeather div
     let imgcon = document.querySelector("#curWeather");
     //makes entry not case sensative;
     currCond = currCond.toLowerCase();
