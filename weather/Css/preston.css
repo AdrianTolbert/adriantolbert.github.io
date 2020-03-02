@@ -20,7 +20,9 @@ html {
 
 
 /* Mobile First Styles */
-
+.hide {
+    display: none;
+}
 
 header {
     background-color: lightcyan;
@@ -85,8 +87,8 @@ nav button {
     background-color: white;
     font-size: 1.6rem;
     border: none;
-    
-    
+
+
 }
 
 nav ul {
@@ -126,9 +128,11 @@ main {
 #currentConditions h1 {
     margin: 0
 }
-#conflex{
-   width:100%; 
+
+#conflex {
+    width: 100%;
 }
+
 #temps h1,
 #conditions h1,
 #precipitation h1 {
@@ -272,139 +276,6 @@ footer {
     clear: both;
 } */
 
-/*  
-     large screen css */
-
-@media only screen and (min-width: 760px) {
-
-
-
-    nav button {
-        display: none;
-    }
-
-    nav ul.hide {
-        display: flex;
-        margin-top: 0;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-        /* border-top: black 3px solid;
-        border-bottom: black 3px solid; */
-    }
-
-    nav {
-        position: static;
-        border: black;
-
-    }
-
-
-    nav ul li a{
-        border: black solid 2px;
-        /* padding:1px;
-        margin-bottom:10px; */
-    }
-
-    
-
-    #locationName {
-        text-align: left;
-    }
-
-    #weather-temps {
-        display: flex;
-        width: 90%;
-        margin: auto;
-        margin-bottom: 10px;
-        height: auto;
-    }
-
-    #temp {
-        width: auto;
-        font-size: 8em;
-        margin: 0em;
-        order: 0;
-        padding: 1em .7em 0 .7em;
-    }
-
-
-    #high {
-        font-size: 4em;
-        margin-right: 100px;
-        color: red;
-
-    }
-
-    #low {
-
-        margin-left: 100px;
-        color: blue;
-        font-size: 4em;
-    }
-
-
-
-    #feels-like {
-        display: initial;
-        width: 100%;
-        color: black;
-        font-size: 2em;
-        margin-top: 5px;
-    }
- /* css to get wind and gust to display next to each other */
-
- #conflex{
-     display:flex;
-     width:50%;
-     justify-content: space-between;
- }
-
-    #wind-gusts {
-        display:inherit;
-        font-size: 1.5em;
-        margin:0;
-
-    }
-
-    #wind-speed {
-        width:initial;
-        font-size: 1.5em;
-        margin:0;
-    }
-
-/* cssfor the large screen dials  */
-    #temps,
-    #conditions,
-    #precipitation {
-        margin: 0;
-    }
-
-    .large-screen {
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-    }
-
-    #temps,
-    #conditions,
-    #precipitation {
-        margin: 50px 50px;
-
-
-
-    }
-
-
-
-    footer {
-        margin: 0;
-    }
-
-}
-
-
-
 
 /* Css Section for the Components. */
 
@@ -442,8 +313,7 @@ footer {
 .i7,
 .i8,
 .i9,
-.i10 
-.i11{
+.i10 .i11 {
     font-size: 18px;
 }
 
@@ -506,12 +376,14 @@ footer {
     right: 49px;
     z-index: 4;
 }
+
 .i6 {
     position: absolute;
     bottom: -35px;
     left: 92px;
     z-index: 4;
 }
+
 .i7 {
     position: absolute;
     left: 49px;
@@ -538,14 +410,15 @@ footer {
     top: 7px;
     left: 14px;
     z-index: 4;
-    font-size:18px;
+    font-size: 18px;
 }
+
 .i11 {
     position: absolute;
     top: -24px;
     left: 46px;
     z-index: 4;
-    font-size:18px;
+    font-size: 18px;
 }
 
 
@@ -657,47 +530,33 @@ img {
     height: 23px;
     background-color: orange;
     border-radius: 90%;
-   
+
 }
 
 /* background for container */
 
 #curWeather {
     background-size: cover;
-    padding:20px;
-   }
+    padding: 20px;
+}
 
-   /* Background pictures for the conditions */
+/* Background pictures for the conditions */
 .clear {
-    background-image: url("/adriantolbert.github.io/Wk6images/clear-main.jpg"); 
- }
-.lgclear {
-    background-image: url("/adriantolbert.github.io/Wk6images/clear-large.jpg"); 
- }
+    background-image: url("/adriantolbert.github.io/Wk6images/clear-main.jpg");
+}
+
 .fog {
-    background-image: url("/adriantolbert.github.io/Wk6images/fog-main.jpg"); 
- }
-.lgfog {
-    background-image: url("/adriantolbert.github.io/Wk6images/fog-large.jpg"); 
+    background-image: url("/adriantolbert.github.io/Wk6images/fog-main.jpg");
 }
+
 .snow {
-    background-image: url("/adriantolbert.github.io/Wk6images/snow-main.jpg"); 
+    background-image: url("/adriantolbert.github.io/Wk6images/snow-main.jpg");
 }
-.lgsnow {
-    background-image: url("/adriantolbert.github.io/Wk6images/snow-large.jpg"); 
-}
+
 .rain {
-    background-image: url("/adriantolbert.github.io/Wk6images/rain-main.jpg"); 
+    background-image: url("/adriantolbert.github.io/Wk6images/rain-main.jpg");
 }
-.lgrain {
-    background-image: url("/adriantolbert.github.io/Wk6images/rain-large.jpg"); 
- }
+
 .cloud {
-    background-image: url("/adriantolbert.github.io/Wk6images/clouds-main.jpg"); 
+    background-image: url("/adriantolbert.github.io/Wk6images/clouds-main.jpg");
 }
-.lgcloud {
-    background-image: url("/adriantolbert.github.io/Wk6images/clouds-large.jpg"); 
-}
-
-
-  

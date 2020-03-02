@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/adriantolbert.github.io/weather/Css/preston.css">
-    <link rel="stylesheet" href="/adriantolbert.github.io/css/normalize.css">
-    <title>PopRock Weather</title>
+    <link rel="stylesheet" href="/adriantolbert.github.io//weather/Css/preston-large.css">
+    <link rel="stylesheet" href="/adriantolbert.github.io//css/normalize.css">
+    <title id="page-title">PopRock Weather</title>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
             <picture>
-                <img src="/adriantolbert.github.io/weather/images/WeatherSiteLogo.png" alt="Weather logo">
+                <img src="/adriantolbert.github.io//weather/images/WeatherSiteLogo.png" alt="Weather logo">
             </picture>
 
             <section class="headings">
@@ -28,8 +29,7 @@
 
 
         </header>
-        <nav>
-            <!-- <button onclick="toggleMenu()"> &#9776menu;</button> -->
+        <nav id="page-nav">
             <button id="mobileMenu"> &#9776Menu</button>
             <ul id="primaryNav" class="hide">
 
@@ -41,15 +41,17 @@
             </ul>
 
         </nav>
+        <!-- <section id="status">Please be patient while I get your weather information.</section> -->
 
-        <main>
+        <main id="main-content">
 
             <section id=locationName>
                 <h1>Preston, ID</h1>
                 <h3>GPS:42.543, 111.5231</h3>
             </section>
 
-            <div id="curWeather" class="clear">
+            <div id="curWeather">
+
              <!-- Current Conditions section -->
 
                 <section id="weather-temps" class="tile">
@@ -99,7 +101,7 @@
                             <p class="i1">1</p>
                             <p class="i2">2</p>
                             <p class="i3">3</p>
-                            <p class="i4" class="slider">4</p>
+                            <p class="i4 slider">4</p>
                             <p class="i5">5</p>
                             <p class="i6">6</p>
                             <p class="i7">7</p>
@@ -225,8 +227,8 @@
     </footer>
 
     </div>
-    <!-- <script src="/adriantolbert.github.io/weather/java/preston.js"></script> -->
-    <script src="/adriantolbert.github.io/weather/java/preston.js"></script>
+    
+    <script src="/adriantolbert.github.io//weather/java/function.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,151 @@
+@media only screen and (min-width: 760px) {
+
+
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        /* border-top: black 3px solid;
+        border-bottom: black 3px solid; */
+    }
+
+    nav {
+        position: static;
+        border: black;
+
+    }
+
+
+    nav ul li a {
+        border: black solid 2px;
+        /* padding:1px;
+        margin-bottom:10px; */
+    }
+
+
+
+    #locationName {
+        text-align: left;
+    }
+
+    #weather-temps {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    #temp {
+        width: auto;
+        font-size: 8em;
+        margin: 0em;
+        order: 0;
+        padding: 1em .7em 0 .7em;
+    }
+
+
+    #high {
+        font-size: 4em;
+        margin-right: 100px;
+        color: red;
+
+    }
+
+    #low {
+
+        margin-left: 100px;
+        color: blue;
+        font-size: 4em;
+    }
+
+
+
+    #feels-like {
+        display: initial;
+        width: 100%;
+        color: black;
+        font-size: 2em;
+        margin-top: 5px;
+    }
+
+    /* css to get wind and gust to display next to each other */
+
+    #conflex {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    #wind-gusts {
+        display: inherit;
+        font-size: 1.5em;
+        margin: 0;
+
+    }
+
+    #wind-speed {
+        width: initial;
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    /* cssfor the large screen dials  */
+    #temps,
+    #conditions,
+    #precipitation {
+        margin: 0;
+    }
+
+    .large-screen {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    #temps,
+    #conditions,
+    #precipitation {
+        margin: 50px 50px;
+
+
+
+    }
+
+
+    /* Footer css */
+    footer {
+        margin: 0;
+    }
+
+
+
+    /* Background images for the curWeather div */
+    .clear {
+        background-image: url("/adriantolbert.github.io/Wk6images/clear-large.jpg");
+    }
+
+    .fog {
+        background-image: url("/adriantolbert.github.io/Wk6images/fog-large.jpg");
+    }
+
+    .snow {
+        background-image: url("/adriantolbert.github.io/Wk6images/snow-large.jpg");
+    }
+
+    .rain {
+        background-image: url("/adriantolbert.github.io/Wk6images/rain-large.jpg");
+    }
+
+    .cloud {
+        background-image: url("/adriantolbert.github.io/Wk6images/clouds-large.jpg");
+    }
+
+}
