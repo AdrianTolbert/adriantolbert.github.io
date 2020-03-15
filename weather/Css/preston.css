@@ -10,7 +10,7 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 
@@ -175,6 +175,7 @@ main {
 #weather-temps {
 
     display: flex;
+ 
     justify-content: center;
     flex-wrap: wrap;
     height: auto;
@@ -183,26 +184,6 @@ main {
 
 }
 
-#temp {
-    font-size: 6em;
-    margin: 10px 0 0 0;
-    order: -1;
-    width: 100%;
-    display: block;
-}
-
-#high {
-    color: red;
-    font-size: 4em;
-    margin: 10px 10px 0 0;
-
-}
-
-#low {
-    color: blue;
-    font-size: 4em;
-    margin: 10px 0 0 10px;
-}
 
 #wind-speed {
     margin-top: 10px;
@@ -217,6 +198,36 @@ main {
 #wind-gusts {
     display: none;
 }
+
+#feel{
+display:none; 
+}
+
+#hiTemp {
+    font-size: 4em;
+    margin-right: 1px;
+    color: red;
+    
+
+}
+
+#lowTemp {
+
+    margin-left: 100px;
+    color: blue;
+    font-size: 4em;
+    margin-top:60px;
+    margin-left:20px;
+}
+
+#currentTemp {
+    width: auto;
+    font-size: 8em;
+    margin: 0em;
+
+    padding: 20px .7em 0 .7em;
+}
+
 
 
 /* #currentConditions {
@@ -317,7 +328,8 @@ footer {
     font-size: 18px;
 }
 
-.o0,
+.o12,
+.o11,
 .o1,
 .o2,
 .o3,
@@ -328,6 +340,22 @@ footer {
 .o8,
 .o9,
 .o10 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* wind outside numbers */
+.wi12,
+.wi11,
+.wi1,
+.wi2,
+.wi3,
+.wi4,
+.wi5,
+.wi6,
+.wi7,
+.wi8,
+.wi9,
+.wi10 {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -427,14 +455,8 @@ footer {
 
 /* outer component positions */
 
-.o0 {
 
-    position: absolute;
-    top: -73px;
-    left: 89px;
-    ;
-    z-index: 4
-}
+
 
 .o1 {
     position: absolute;
@@ -506,13 +528,200 @@ footer {
     left: -26px;
     z-index: 4;
 }
+.o11 {
 
+    position: absolute;
+    top: -55px;
+    left: 15px;
+    z-index: 4
+}
+.o12 {
 
-/* css for the center image */
-img {
-    width: 35px;
+    position: absolute;
+    top: -73px;
+    left: 89px;
+    ;
+    z-index: 4
+}
+ 
+/* wind values */
+.wi1 {
+    position: absolute;
+    right: 17px;
+    top: -53px;
+    z-index: 4
+}
+
+.wi2 {
+    position: absolute;
+    top: -7px;
+    right: -25px;
+    z-index: 4
+}
+
+.wi3 {
+    position: absolute;
+    top: 45px;
+    right: -36px;
+    z-index: 4;
+}
+
+.wi4 {
+    position: absolute;
+    bottom: -11px;
+    right: -23px;
+    z-index: 4;
+}
+
+.wi5 {
+    position: absolute;
+    bottom: -54px;
+    right: 16px;
+    z-index: 4;
 
 }
+
+.wi6 {
+    position: absolute;
+    bottom: -69px;
+    left: 86px;
+    z-index: 4;
+}
+
+.wi7 {
+    position: absolute;
+    left: 25px;
+    bottom: -56px;
+    z-index: 4;
+}
+
+.wi8 {
+    position: absolute;
+    left: -24px;
+    bottom: -12px;
+    z-index: 4;
+}
+
+.wi9 {
+    position: absolute;
+    top: 45px;
+    left: -35px;
+    z-index: 4;
+}
+
+.wi10 {
+    position: absolute;
+    top: -8px;
+    left: -26px;
+    z-index: 4;
+}
+.wi11 {
+
+    position: absolute;
+    top: -55px;
+    left: 15px;
+    z-index: 4
+}
+.wi12 {
+
+    position: absolute;
+    top: -73px;
+    left: 89px;
+    ;
+    z-index: 4
+}
+ /* conditon photos */
+ .imge1 {
+    position: absolute;
+    right: 17px;
+    top: -53px;
+    z-index: 4
+}
+
+.imge2 {
+    position: absolute;
+    top: -7px;
+    right: -25px;
+    z-index: 4
+}
+
+.imge3 {
+    position: absolute;
+    top: 45px;
+    right: -36px;
+    z-index: 4;
+}
+
+.imge4 {
+    position: absolute;
+    bottom: -11px;
+    right: -23px;
+    z-index: 4;
+}
+
+.imge5 {
+    position: absolute;
+    bottom: -54px;
+    right: 16px;
+    z-index: 4;
+
+}
+
+.imge6 {
+    position: absolute;
+    bottom: -69px;
+    left: 86px;
+    z-index: 4;
+}
+
+.imge7 {
+    position: absolute;
+    left: 25px;
+    bottom: -56px;
+    z-index: 4;
+}
+
+.imge8 {
+    position: absolute;
+    left: -24px;
+    bottom: -12px;
+    z-index: 4;
+}
+
+.imge9 {
+    position: absolute;
+    top: 45px;
+    left: -35px;
+    z-index: 4;
+}
+
+.imge10 {
+    position: absolute;
+    top: -8px;
+    left: -26px;
+    z-index: 4;
+}
+.imge11 {
+
+    position: absolute;
+    top: -55px;
+    left: 15px;
+    z-index: 4
+}
+.imge12 {
+
+    position: absolute;
+    top: -73px;
+    left: 89px;
+    ;
+    z-index: 4
+}
+
+/* css for the center image */
+/* img {
+    width: 35px;
+
+} */
 
 .center {
     position: absolute;
@@ -533,6 +742,11 @@ img {
 
 }
 
+/* Constrain condition images */
+.large-screen img{
+    max-width: 30%;
+    border-radius: 5px;
+  }
 /* background for container */
 
 #curWeather {
@@ -542,21 +756,21 @@ img {
 
 /* Background pictures for the conditions */
 .clear {
-    background-image: url("/adriantolbert.github.io/Wk6images/clear-main.jpg");
+    background-image: url("/Wk6images/clear-main.jpg");
 }
 
 .fog {
-    background-image: url("/adriantolbert.github.io/Wk6images/fog-main.jpg");
+    background-image: url("/Wk6images/fog-main.jpg");
 }
 
 .snow {
-    background-image: url("/adriantolbert.github.io/Wk6images/snow-main.jpg");
+    background-image: url("/Wk6images/snow-main.jpg");
 }
 
 .rain {
-    background-image: url("/adriantolbert.github.io/Wk6images/rain-main.jpg");
+    background-image: url("/Wk6images/rain-main.jpg");
 }
 
 .cloud {
-    background-image: url("/adriantolbert.github.io/Wk6images/clouds-main.jpg");
+    background-image: url("/Wk6images/clouds-main.jpg");
 }

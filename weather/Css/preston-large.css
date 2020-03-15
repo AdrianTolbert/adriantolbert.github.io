@@ -37,13 +37,13 @@
 
     #weather-temps {
         display: flex;
-        width: 90%;
+        width: auto;
         margin: auto;
         margin-bottom: 10px;
         height: auto;
     }
 
-    #temp {
+    #currentTemp {
         width: auto;
         font-size: 8em;
         margin: 0em;
@@ -52,14 +52,14 @@
     }
 
 
-    #high {
+    #hiTemp {
         font-size: 4em;
         margin-right: 100px;
         color: red;
 
     }
 
-    #low {
+    #lowTemp {
 
         margin-left: 100px;
         color: blue;
@@ -68,7 +68,7 @@
 
 
 
-    #feels-like {
+    #feel{
         display: initial;
         width: 100%;
         color: black;
@@ -129,23 +129,23 @@
 
     /* Background images for the curWeather div */
     .clear {
-        background-image: url("/adriantolbert.github.io/Wk6images/clear-large.jpg");
+        background-image: url("/Wk6images/clear-large.jpg");
     }
 
     .fog {
-        background-image: url("/adriantolbert.github.io/Wk6images/fog-large.jpg");
+        background-image: url("/Wk6images/fog-large.jpg");
     }
 
     .snow {
-        background-image: url("/adriantolbert.github.io/Wk6images/snow-large.jpg");
+        background-image: url("/Wk6images/snow-large.jpg");
     }
 
     .rain {
-        background-image: url("/adriantolbert.github.io/Wk6images/rain-large.jpg");
+        background-image: url("/Wk6images/rain-large.jpg");
     }
 
     .cloud {
-        background-image: url("/adriantolbert.github.io/Wk6images/clouds-large.jpg");
+        background-image: url("/Wk6images/clouds-large.jpg");
     }
 
 }
